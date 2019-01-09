@@ -178,7 +178,7 @@ footer a {
     }
 
     .current {
-        border-bottom: none;
+        /* border-bottom: none; */
     }
 
     #footer-mobile {
