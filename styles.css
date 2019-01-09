@@ -167,7 +167,7 @@ footer a {
 
 /* Adjust for web ---------------------------------------------------------- */
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 800px) {
 
     #top-mobile {
         display: none;

@@ -1,4 +1,4 @@
-if ($(window).width() > 600) {    
+if ($(window).width() > 800) {    
     var e = document.getElementById('target');
     var e_loc = e.getBoundingClientRect();
     console.log(e_loc)
