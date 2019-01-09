@@ -58,5 +58,7 @@ if ($(window).width() > 600) {
                 }
         }
     }  
-} 
+} else {
+    // do nothing
+}
   
