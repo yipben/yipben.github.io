@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Benjamin Yip</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> -->
+        <link href="styles.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="library/p5.min.js"></script>
+        <script src="library/p5.dom.min.js"></script>
+        <script src="sketch.js" defer></script>
+    </head>
+
+    <body>
+        <header>
+            <div id="top-mobile" class="top">
+                B. Yip 
+                <img src="images/flower_stem.png">
+            </div>
+
+            <div id="top-web" class="top">
+                <b>Ben</b>jamin <b>Yip</b> 
+                <img src="images/flower_stem.png">
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="resume.html" class="current">Resume</a></li>
+                    <!-- <li><a href="contact.html">Contact</a></li> -->
+                </ul>
+            </nav>
+        </header>
+
+        <div class="container" id="resume">
+            <!-- <img src="images/fish.svg"> -->
+            <a href="byip_resume.pdf" class="button" id="target">Click to View</a>
+            <!-- <object width="500" height="600" type="application/pdf" data="byip_resume.pdf?#zoom=85&scrollbar=0&toolbar=0&navpanes=0">
+                <p>Insert your error message here, if the PDF cannot be displayed.</p>
+            </object> -->
+        </div>
+
+        <footer>
+                <div class="foot-block" id="foot-block-left">
+                        © 2019 <b>B.Y.</b>
+                </div>
+    
+                <div class="foot-block">
+                    <a href="https://github.com/yipben" target="_blank"> 
+                        <!-- <img src="images/icons/github.png" alt="Github Icon"> -->
+                        <img src="images/icons/github-brands.svg" alt="Github Icon">
+                    </a>
+                    <a href="https://www.linkedin.com/in/yipben/" target="_blank"> 
+                        <!-- <img src="images/icons/In-2C-81px-R.png" alt="LinkedIn Icon"> -->
+                        <img src="images/icons/linkedin-in-brands.svg" alt="LinkedIn Icon">
+                    </a>
+                </div>
+    
+                <div class="foot-block" id="foot-block-right">
+                    <!-- Last updated: <span id="xyz"></span> -->
+                    <img src="images/fish.svg" alt="a fish by ben yip" style="width:2.75em;">
+                </div>
+            </footer>
+    
+            <!-- <script type="text/javascript">
+                document.getElementById('xyz').innerHTML = document.lastModified.split(" ")[0];
+            </script> -->
+
+    </body>
+
+</html>
