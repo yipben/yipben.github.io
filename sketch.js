@@ -19,7 +19,7 @@ if ($(window).width() > 800) {
 
 
     function windowResized() {
-       if ($(window).width() > 600) {
+       if ($(window).width() > 800) {
          e_loc = e.getBoundingClientRect();
          s_loc = s.getBoundingClientRect();
          resizeCanvas(windowWidth, windowHeight);
