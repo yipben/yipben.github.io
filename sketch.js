@@ -25,7 +25,7 @@ if ($(window).width() > 600) {
          resizeCanvas(windowWidth, windowHeight);
          test = new DotConnector(s_loc, e_loc);
        } else {
-           clear();
+           remove();
        }
     }
 
