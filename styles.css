@@ -20,10 +20,13 @@ body {
 
 header {
     width: 100%;
-    margin-top: 3.5em;
+    margin-top: 4em;
     z-index: 3;
 }
 
+header b {
+    font-weight: 300;
+}
 .top {
     width: 100%;
     font-size: 4em;
@@ -135,11 +138,12 @@ footer {
     -webkit-box-shadow: inset 0px 5px 6px -6px black;
        -moz-box-shadow: inset 0px 5px 6px -6px black;
             box-shadow: inset 0px 5px 6px -6px black;
+
 }
 
 footer img {
-    margin: 0px 5% 0 5%;
-    width: 1.5em;
+    margin: 0 1em 0 1em;
+    width: 2em;
     vertical-align: middle;
 }
 

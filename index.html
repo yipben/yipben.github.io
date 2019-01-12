@@ -8,14 +8,10 @@
         <!-- <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> -->
         <link href="styles.css" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="library/p5.min.js"></script>
-        <script src="library/p5.dom.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/addons/p5.dom.min.js"></script>
+
         <script src="sketch.js" defer></script>
-        <!-- <script>
-            if (screen.width >= 600) {
-                document.head.appendChild(document.createElement('script')).src = 'sketch.js';
-            }
-        </script> -->
     </head>
 
     <body>
@@ -41,7 +37,16 @@
 
         <div class="container" id="about">
             <img src="images/me.jpg" id="target">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <div class="p-container">
+                <p>
+                    Hi, I'm Ben! 
+                    I'm an aspiring data scientist and current M.S. candidate in Analytics at the Insitute for Advanced Analytics at N.C. State University.
+                </p>
+    
+                <p>
+                    <!-- Besides data science, my two main passions are surfing and ice cream. In no particular order -->
+                </p>
+            </div>
         </div>
 
         <footer id="footer-web">
@@ -63,7 +68,7 @@
                 <div class="foot-block" id="foot-block-right">
                     <!-- Last updated: <span id="xyz"></span> -->
                     <span>A Fish by B.Y.</span>
-                    <img src="images/fish.svg" alt="a fish by ben yip" style="width:2.75em;">
+                    <img src="images/fish.svg" alt="a fish by ben yip" style="width:3em;">
                 </div>
             </footer>
 
@@ -85,7 +90,7 @@
 
                 <div class="foot-block" id="foot-block-right">
                     <!-- Last updated: <span id="xyz"></span> -->
-                    <img src="images/fish.svg" alt="a fish by ben yip" style="width:2.75em;">
+                    <img src="images/fish.svg" alt="a fish by ben yip" style="width:3em;">
                 </div>
             </footer>
 
