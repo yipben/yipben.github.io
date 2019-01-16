@@ -15,6 +15,9 @@ body {
     flex-direction: column;
 }
 
+b {
+    font-weight: 300;
+}
 
 /* Header ------------------------------------------------------------------ */
 
@@ -33,7 +36,7 @@ header b {
     text-transform: uppercase;
     margin: 0;
 
-    border-bottom: 1px solid black;
+    /* border-bottom: 1px solid black; */
     -webkit-box-shadow: 0 5px 6px -6px black;
        -moz-box-shadow: 0 5px 6px -6px black;
             box-shadow: 0 5px 6px -6px black;
@@ -58,6 +61,8 @@ nav ul {
 
     display: flex;
     justify-content: center;
+
+    /* background: rgba(134, 169, 121, 0.7); */
 }
 
 nav li {
@@ -92,6 +97,8 @@ nav a:hover, nav a:active {
     flex: 1 0 auto;
 
     z-index: 1;
+
+    /* background: rgba(134, 169, 121, 0.7); */
 }
 
 .container img {
@@ -101,13 +108,26 @@ nav a:hover, nav a:active {
        -moz-box-shadow: 0 0 5px black;
             box-shadow: 0 0 5px black;
 
-    width: 10em; /* change for web */
+    width: 15em; /* change for web */
 }
 
-.container p {
+.p-container {
     text-align: left;
-    max-width: 500px;
+    max-width: 700px;
     padding: 0 2em 0 2em;
+}
+
+.p-container h1{
+    font-weight: 100;
+}
+
+.p-container a {
+    text-decoration: underline;
+    color: #86A979;
+}
+
+.black-text {
+    color: black;
 }
 
 .button {
@@ -130,14 +150,17 @@ nav a:hover, nav a:active {
 footer {
     flex-shrink: 0;
     padding: .5em;
-    background: rgba(134, 169, 121, 0.8);
 
     display: flex;
     justify-content: center;
     align-items: center;
-    -webkit-box-shadow: inset 0px 5px 6px -6px black;
+    /* -webkit-box-shadow: inset 0px 5px 6px -6px black;
        -moz-box-shadow: inset 0px 5px 6px -6px black;
-            box-shadow: inset 0px 5px 6px -6px black;
+            box-shadow: inset 0px 5px 6px -6px black; */
+
+    -webkit-box-shadow: 0px -5px 6px -6px rgba(0,0,0,0.68);
+       -moz-box-shadow: 0px -5px 6px -6px rgba(0,0,0,0.68);
+            box-shadow: 0px -5px 6px -6px rgba(0,0,0,0.68);
 
 }
 
@@ -194,7 +217,7 @@ footer a {
     }
 
     .container img {
-        width: 15em;
+        /* width: 15em; */
         margin-left: 2em;
     }
 
