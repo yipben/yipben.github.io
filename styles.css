@@ -111,6 +111,7 @@ nav a:hover, nav a:active {
     text-align: left;
     max-width: 700px;
     padding: 0 2em 0 2em;
+    margin-top: 2em;
     margin-bottom: 2em;
 
     /* -webkit-box-shadow: 0 0 5px black;
@@ -235,10 +236,8 @@ footer a {
         flex-direction: row;
     }
 
-    /* .p-container {
-        margin-left: 2em;
-        margin-right: 2em;
-        margin-top: 0;
-    } */
+    .p-container {
+        margin: 0;
+    }
 
 }
