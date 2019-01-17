@@ -95,6 +95,8 @@ nav a:hover, nav a:active {
     flex: 1 0 auto;
 
     z-index: 1;
+
+    height: 70vh;
 }
 
 .container img {
@@ -207,16 +209,29 @@ footer a {
 
 @media only screen and (min-width: 800px) {
 
+    header {
+        position: sticky;
+        position: -webkit-sticky;
+        top: 0;
+
+        background: white;
+    }
+
     #top-mobile {
         display: none;
     }
    
     #top-web {
         display: inherit;
+        background: white;
+    }
+
+    .container {
+        height: 70vh;
     }
 
     .current {
-        border-bottom: none;
+        /* border-bottom: none; */
     }
 
     #footer-mobile {
