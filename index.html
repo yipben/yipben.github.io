@@ -23,32 +23,7 @@
         <meta name="theme-color" content="#ffffff">   
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script>
-        $(document).ready(function(){
-        // Add smooth scrolling to all links
-        $("a").on('click', function(event) {
-
-            // Make sure this.hash has a value before overriding default behavior
-            if (this.hash !== "") {
-            // Prevent default anchor click behavior
-            event.preventDefault();
-
-            // Store hash
-            var hash = this.hash;
-
-            // Using jQuery's animate() method to add smooth page scroll
-            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-            $('html, body').animate({
-                scrollTop: $(hash).offset().top
-            }, 800, function(){
-
-                // Add hash (#) to URL when done scrolling (default click behavior)
-                window.location.hash = hash;
-            });
-            } // End if
-        });
-        });
-        </script>
+        <script src="smoothScroll.js"></script>
         
     </head>
 
@@ -65,9 +40,9 @@
             </div>
             
             <nav>
-                <ul>
-                    <li><a href="index.html" class="current">About</a></li>
-                    <li><a href="#resume">Resume</a></li>
+                <ul id="main-nav">
+                    <li><a href="#about" class="current">About</a></li>
+                    <li><a href="#resume" id="res_link">Resume</a></li>
                     <!-- <li><a href="contact.html">Contact</a></li> -->
                 </ul>
             </nav>
@@ -99,11 +74,10 @@
         </div>
 
         <div class="container" id="resume">
-                <!-- <img src="images/fish.svg"> -->
-                <a href="byip_resume.pdf" class="button" id="target">Click to View</a>
-                <!-- <object width="500" height="600" type="application/pdf" data="byip_resume.pdf?#zoom=85&scrollbar=0&toolbar=0&navpanes=0">
-                    <p>Insert your error message here, if the PDF cannot be displayed.</p>
-                </object> -->
+                <!-- <a href="byip_resume.pdf"><img src="images/icons/icons8-resume-100.png"></a> -->
+                <a href="docs/byip_resume_web.pdf" class="button" id="target" target="_blank">
+                    Click to View <br> <span id="bigger-text">My Resume</span>
+                </a>
         </div>
 
         <footer id="footer-web">
@@ -123,7 +97,6 @@
                 </div>
     
                 <div class="foot-block" id="foot-block-right">
-                    <!-- Last updated: <span id="xyz"></span> -->
                     <img src="images/logo.svg" alt="ben yip's logo">
                 </div>
             </footer>
