@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:100,300');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,500,700,900');
 
 html, body {
     margin: 0;
@@ -135,6 +135,7 @@ nav a:hover, nav a:active {
 .p-container a {
     text-decoration: underline;
     color: black;
+    text-decoration-color: #E2CA32;
 }
 
 .black-text {
@@ -142,17 +143,27 @@ nav a:hover, nav a:active {
 }
 
 .button {
-    font-size: 20pt;
+    /* font-size: 20pt;
     text-decoration: none;
     border: 1px solid black;
     padding: 10px;
     color: white;
     background: #86A979;
-    text-transform: uppercase;
+    text-transform: uppercase; */
 
-    -webkit-box-shadow: 0 0 5px black;
+    /* -webkit-box-shadow: 0 0 5px black;
        -moz-box-shadow: 0 0 5px black;
-            box-shadow: 0 0 5px black;
+            box-shadow: 0 0 5px black; */
+
+    text-transform: uppercase;
+    font-size: 2em;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: .15em;
+    padding: 10px;
+    color: black;
+    background: #E2CA32;
+    text-align: left;
 }
 
 

@@ -1,17 +1,27 @@
 <!DOCTYPE html>
 <html>
 
-    <head>
-        <title>Benjamin Yip</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> -->
-        <link href="styles.css" rel="stylesheet">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="library/p5.min.js"></script>
-        <script src="library/p5.dom.min.js"></script>
-        <script src="sketch.js" defer></script>
-    </head>
+        <head>
+                <title>Benjamin Yip</title>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <!-- <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> -->
+                <link href="styles.css" rel="stylesheet">
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.min.js"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/addons/p5.dom.min.js"></script>
+        
+                <script src="sketch.js" defer></script>
+        
+                <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon.png">
+                <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
+                <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
+                <link rel="manifest" href="images/favicons/manifest.json">
+                <link rel="mask-icon" href="images/favicons/safari-pinned-tab.svg" color="#86a979">
+                <link rel="shortcut icon" href="images/favicons/favicon.ico">
+                <meta name="msapplication-config" content="images/favicons/browserconfig.xml">
+                <meta name="theme-color" content="#ffffff">   
+            </head>
 
     <body>
         <header>
@@ -21,9 +31,9 @@
             </div>
 
             <div id="top-web" class="top">
-                <b>Ben</b>jamin <b>Yip</b> 
-                <img src="images/flower_stem.png">
-            </div>
+                    Benjamin Yip
+                    <img src="images/flower_stem.png">
+                </div>
 
             <nav>
                 <ul>
@@ -35,16 +45,12 @@
         </header>
 
         <div class="container" id="resume">
-            <!-- <img src="images/fish.svg"> -->
-            <a href="byip_resume.pdf" class="button" id="target">Click to View</a>
-            <!-- <object width="500" height="600" type="application/pdf" data="byip_resume.pdf?#zoom=85&scrollbar=0&toolbar=0&navpanes=0">
-                <p>Insert your error message here, if the PDF cannot be displayed.</p>
-            </object> -->
+            <a href="docs/byip_resume_web.pdf" class="button" id="target" target="_blank">Click to View</a>
         </div>
 
         <footer id="footer-web">
                 <div class="foot-block" id="foot-block-left">
-                        © 2019 <b>Ben</b>jamin <b>Yip</b>
+                        © 2019 Benjamin Yip
                 </div>
     
                 <div class="foot-block">
@@ -60,7 +66,7 @@
     
                 <div class="foot-block" id="foot-block-right">
                     <!-- Last updated: <span id="xyz"></span> -->
-                    <img src="images/fish.svg" alt="a fish by ben yip" style="width:2.75em;">
+                    <img src="images/logo.svg" alt="ben yip's logo">
                 </div>
             </footer>
 
@@ -81,14 +87,9 @@
                 </div>
 
                 <div class="foot-block" id="foot-block-right">
-                    <!-- Last updated: <span id="xyz"></span> -->
-                    <img src="images/fish.svg" alt="a fish by ben yip" style="width:2.75em;">
+                    <img src="images/logo.svg" alt="ben yip's logo">
                 </div>
-            </footer>
-    
-            <!-- <script type="text/javascript">
-                document.getElementById('xyz').innerHTML = document.lastModified.split(" ")[0];
-            </script> -->
+            </footer>       
 
     </body>
 

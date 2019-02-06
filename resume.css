@@ -1,0 +1,66 @@
+#resume-container {
+    margin: 2em 4em 1em 4em;
+}
+
+.resume_section {
+    display: inline-block;
+    text-align: left;
+    width: 100%
+}
+
+.resume_section h1 {
+    font-size: 2em;
+    font-weight: 500;
+    overflow: hidden;
+    /* background: #E2CA32; */
+}
+
+.resume_section h1:after {
+    content: "";
+    border-bottom: 1px solid black;
+    width: 100%;
+    margin-right: -100%;
+    display: inline-block;
+}
+
+.right {
+    float: right;
+    font-style: italic;
+    font-weight: 300;
+}
+
+.right.date {
+    font-size: .8em;
+    font-weight: 100;
+}
+
+.skills-cert-container {
+    display: flex;
+}
+
+#skill-cat {
+    font-weight: 700;
+    text-align: right;
+}
+
+#skills {
+    margin-left: 1em;
+}
+
+.org {
+    font-weight: 500;
+}
+
+.sub {
+    font-variant: small-caps;
+    font-weight: 300;
+}
+
+#res-attribution a {
+    text-decoration: underline;
+    color: black;
+    text-decoration-color: #E2CA32;
+}
+#resume.container {
+    margin-top: 6em;
+}
