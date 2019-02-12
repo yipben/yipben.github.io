@@ -19,7 +19,7 @@ if ($(window).width() > 800) {
     var s_loc = s.getBoundingClientRect();
 
     function setup() {
-        canvas = createCanvas(windowWidth, windowHeight);
+        canvas = createCanvas($(window).width(), windowHeight);
         canvas.position(0, 0);
         canvas.style('z-index', '-1');
         current = new DotConnector(s_loc, e_loc);
@@ -29,7 +29,7 @@ if ($(window).width() > 800) {
        if ($(window).width() > 800) {
          e_loc = e.getBoundingClientRect();
          s_loc = s.getBoundingClientRect();
-         resizeCanvas(windowWidth, windowHeight);
+         resizeCanvas($(window).width(), windowHeight);
          current = new DotConnector(s_loc, e_loc);
        } else {
           remove();

@@ -1,18 +1,17 @@
-#resume-container {
-    margin: 2em 4em 1em 4em;
+#resume.container {
+    margin-bottom: 3em;
 }
 
 .resume_section {
     display: inline-block;
     text-align: left;
-    width: 100%
+    width: 80%
 }
 
 .resume_section h1 {
     font-size: 2em;
     font-weight: 500;
     overflow: hidden;
-    /* background: #E2CA32; */
 }
 
 .resume_section h1:after {
@@ -21,6 +20,16 @@
     width: 100%;
     margin-right: -100%;
     display: inline-block;
+}
+
+.resume_section span {
+    margin: 0;
+    padding: 0;
+}
+
+.resume_section p {
+    margin: 1em 0 0 0;
+    padding: 0;
 }
 
 .right {
@@ -61,6 +70,24 @@
     color: black;
     text-decoration-color: #E2CA32;
 }
-#resume.container {
-    margin-top: 6em;
+
+p a {
+    text-decoration: underline;
+    color: black;
+    text-decoration-color: #E2CA32;
+}
+
+.resume-p {
+    font-weight: 500;
+}
+
+.resume-p.large {
+    font-size: 1.5em;
+    margin: 1em 0 0em 0;
+    padding: .5em;
+}
+
+.ast {
+    font-weight: 100;
+    text-decoration: none;
 }
