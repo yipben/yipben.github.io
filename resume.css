@@ -75,6 +75,7 @@ p a {
     text-decoration: underline;
     color: black;
     text-decoration-color: #E2CA32;
+    -webkit-text-decoration-color: #E2CA32;
 }
 
 .resume-p {

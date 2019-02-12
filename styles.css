@@ -140,6 +140,7 @@ nav a:hover, nav a:active {
     text-decoration: underline;
     color: black;
     text-decoration-color: #E2CA32;
+    -webkit-text-decoration-color: #E2CA32;
 }
 
 .black-text {
