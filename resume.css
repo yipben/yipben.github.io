@@ -91,3 +91,10 @@ p a {
     font-weight: 100;
     text-decoration: none;
 }
+
+.target-empty {
+    /* position: relative;
+    top: 0;
+    left: 0; */
+    float: left;
+}
