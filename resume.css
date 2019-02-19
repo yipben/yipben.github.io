@@ -5,7 +5,7 @@
 .resume_section {
     display: inline-block;
     text-align: left;
-    width: 80%
+    width: 80%; 
 }
 
 .resume_section h1 {
@@ -30,17 +30,6 @@
 .resume_section p {
     margin: 1em 0 0 0;
     padding: 0;
-}
-
-.right {
-    float: right;
-    font-style: italic;
-    font-weight: 300;
-}
-
-.right.date {
-    font-size: .8em;
-    font-weight: 100;
 }
 
 .skills-cert-container {
@@ -71,6 +60,16 @@
     text-decoration-color: #E2CA32;
 }
 
+.right {
+    font-style: italic;
+    font-weight: 300;
+}
+
+.right.date {
+    font-size: .8em;
+    font-weight: 100;
+}
+
 p a {
     text-decoration: underline;
     color: black;
@@ -95,8 +94,30 @@ p a {
 }
 
 .target-empty {
-    /* position: relative;
-    top: 0;
-    left: 0; */
     float: left;
+}
+
+.r-section-head {
+    display: flex;
+    flex-direction: column;
+    margin: 1em 0 0 0;
+}
+
+.r-rhs {
+    margin-top: .3em;
+}
+
+@media only screen and (min-width: 800px) {
+    .r-section-head {
+        flex-direction: row;
+        justify-content: space-between
+    }
+
+    .r-rhs {
+        text-align: left;
+    }
+
+    .right {
+        float: right;
+    }
 }

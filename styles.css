@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,500,700,900');
 
+/* Overall properties ------------------------------------------------------- */
+
 html, body {
     margin: 0;
     height: 100%;
@@ -23,6 +25,8 @@ b {
     font-weight: 300;
 }
 
+
+
 /* Header ------------------------------------------------------------------ */
 
 header {
@@ -34,13 +38,13 @@ header {
 header b {
     font-weight: 300;
 }
+
 .top {
     width: 100%;
     font-size: 4em;
     text-transform: uppercase;
     margin: 0;
 
-    /* border-bottom: 1px solid black; */
     -webkit-box-shadow: 0 5px 6px -6px black;
        -moz-box-shadow: 0 5px 6px -6px black;
             box-shadow: 0 5px 6px -6px black;
@@ -52,7 +56,7 @@ header b {
     vertical-align: bottom;
 }
 
-#top-web {
+.web {
     display: none;
 }
 
@@ -87,6 +91,7 @@ nav a:hover, nav a:active {
 }
 
 
+
 /* Page Content ------------------------------------------------------------ */
 
 .container {
@@ -94,21 +99,23 @@ nav a:hover, nav a:active {
     justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
-    margin-top: .5em;
-
+    margin: 1em 0 1em 0;
     flex: 1 0 auto;
-
     z-index: 1;
 }
 
-.container img {
+.container.first {
+    margin-top: 4em;
+}
+
+.round {
     border-radius: 50%;
     
     -webkit-box-shadow: 0 0 5px black;
        -moz-box-shadow: 0 0 5px black;
             box-shadow: 0 0 5px black;
 
-    width: 15em; /* change for web */
+    width: 17.5em; /* change for web */
 }
 
 .p-container {
@@ -117,15 +124,6 @@ nav a:hover, nav a:active {
     padding: 0 2em 0 2em;
     margin-top: 2em;
     margin-bottom: 2em;
-
-    /* -webkit-box-shadow: 0 0 5px black;
-       -moz-box-shadow: 0 0 5px black;
-            box-shadow: 0 0 5px black; */
-
-    /* background: rgba(134, 169, 121, .4); */
-    /* border-radius: 1em;
-
-    margin: 2em; */
 }
 
 .p-container h1{
@@ -147,29 +145,45 @@ nav a:hover, nav a:active {
     color: black;
 }
 
-.button {
-    /* font-size: 20pt;
-    text-decoration: none;
-    border: 1px solid black;
-    padding: 10px;
-    color: white;
-    background: #86A979;
-    text-transform: uppercase; */
+/* Projects ---------------------------------------------------------------- */
 
-    /* -webkit-box-shadow: 0 0 5px black;
-       -moz-box-shadow: 0 0 5px black;
-            box-shadow: 0 0 5px black; */
-
-    text-transform: uppercase;
-    font-size: 2em;
-    font-weight: 300;
-    text-decoration: none;
+#projects img {
+    width: 17.5em;
     border-radius: .15em;
     padding: 10px;
-    color: black;
-    background: #E2CA32;
-    text-align: left;
 }
+
+#projects .p-container h1 {
+    background: none;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+#projects .p-container h2 {
+    padding: .1em;
+    background: none;
+    font-weight: 300;
+    margin: 0;
+    font-style: italic;
+}
+
+#projects .p-container h3 {
+    padding: .1em;
+    background: none;
+    font-weight: 100;
+    margin: 0;
+}
+
+#projects .p-container p {
+    border-bottom: 3px solid #E2CA32;
+    padding-bottom: 1em;
+}
+
+.a.wrapper {
+    text-decoration: none;
+    color: black;
+}
+
 
 
 /* Footer ------------------------------------------------------------------ */
@@ -181,14 +195,10 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* -webkit-box-shadow: inset 0px 5px 6px -6px black;
-       -moz-box-shadow: inset 0px 5px 6px -6px black;
-            box-shadow: inset 0px 5px 6px -6px black; */
 
     -webkit-box-shadow: 0px -5px 6px -6px rgba(0,0,0,0.68);
        -moz-box-shadow: 0px -5px 6px -6px rgba(0,0,0,0.68);
             box-shadow: 0px -5px 6px -6px rgba(0,0,0,0.68);
-
 }
 
 footer img {
@@ -214,20 +224,17 @@ footer a {
     text-align: right;
 }
 
-#footer-web {
-    display: none;
-}
 
 
 /* Adjust for web ---------------------------------------------------------- */
 
 @media only screen and (min-width: 800px) {
 
-    #top-mobile {
+    .mobile {
         display: none;
     }
    
-    #top-web {
+    .web {
         display: inherit;
     }
 
@@ -235,20 +242,15 @@ footer a {
         border-bottom: none;
     }
 
-    #footer-mobile {
-        display: none;
-    }
-
-    #footer-web {
-        display: inherit;
-    }
-
     .container img {
-        /* width: 15em; */
         margin-left: 2em;
     }
 
     #about {
+        flex-direction: row;
+    }
+
+    #projects {
         flex-direction: row;
     }
 
