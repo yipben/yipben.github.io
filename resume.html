@@ -5,13 +5,22 @@
         <title>Ben Yip | Resume</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
         <link href="css/styles.css" rel="stylesheet">
         <link href="css/resume.css" rel="stylesheet">
+
+        <style>
+            @media only screen and (min-width: 800px) {
+                .current {
+                    border-bottom: 2px solid black;
+                }
+            }
+        </style>
+
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/addons/p5.dom.min.js"></script>
-
-        <script src="sketch.js" defer></script>
+        <!-- <script src="sketch.js" defer></script> -->
 
         <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
@@ -23,34 +32,52 @@
         <meta name="theme-color" content="#ffffff">   
     </head>
 
+    <header>
+        <div class="mobile top">
+            B. Yip 
+            <img src="images/flower_stem.png">
+        </div>
+
+        <div class="web top">
+            Benjamin Yip
+            <img src="images/flower_stem.png">
+        </div>
+        
+        <nav class="web nav">
+            <ul>
+                <li><a href="index.html">About</a></li>
+                <li><a href="resume.html" class="current">Resume</a></li>
+                <li><a href="projects.html">Projects</a></li>
+            </ul>
+        </nav>
+
+        <nav class="mobile nav">
+            <ul>
+                <li><a href="index.html">A</a></li>
+                <li><a href="resume.html" class="current">R</a></li>
+                <li><a href="projects.html">P</a></li>
+            </ul>
+        </nav>
+    </header>
+    
     <body>
-        <header>
-            <div class="mobile top">
-                B. Yip 
-                <img src="images/flower_stem.png">
-            </div>
+       
 
-            <div class="web top">
-                Benjamin Yip
-                <img src="images/flower_stem.png">
-            </div>
-            
-            <nav class="web nav">
-                <ul>
-                    <li><a href="index.html">About</a></li>
-                    <li><a href="resume.html" class="current">Resume</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                </ul>
-            </nav>
+        <!-- <nav class="web nav">
+            <ul>
+                <li><a href="index.html">About</a></li>
+                <li><a href="resume.html" class="current">Resume</a></li>
+                <li><a href="projects.html">Projects</a></li>
+            </ul>
+        </nav>
 
-            <nav class="mobile nav">
-                <ul>
-                    <li><a href="index.html">A</a></li>
-                    <li><a href="resume.html" class="current">R</a></li>
-                    <li><a href="projects.html">P</a></li>
-                </ul>
-            </nav>
-        </header>
+        <nav class="mobile nav">
+            <ul>
+                <li><a href="index.html">A</a></li>
+                <li><a href="resume.html" class="current">R</a></li>
+                <li><a href="projects.html">P</a></li>
+            </ul>
+        </nav> -->
 
         <p class="resume-p large">
             <a id="pdf-link" href="docs/byip_resume_web.pdf" target="_blank">PDF</a> <a href="#attribution" class="ast">*</a>

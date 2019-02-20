@@ -8,7 +8,7 @@ html {
 body {
     font-family: Roboto, sans-serif;
     font-weight: 100;
-    padding: 0;
+    padding: .1em;
 
     display: flex;
     flex-direction: column;
@@ -20,6 +20,10 @@ body {
 
 b {
     font-weight: 300;
+}
+
+.web {
+    display: none;
 }
 
 #notebook-container.container {
@@ -34,15 +38,51 @@ b {
 #notebook.border-box-sizing {
     display: flex;
     flex: 1 0 auto;
-    padding: 0;
+    /* padding: .1em; */
 
     z-index: -1;
 }
 
-.rendered_html h2 {
+
+.rendered_html h1 {
     font-family: Roboto, sans-serif;
     font-weight: 500;
+    margin: 0;
+    padding: .1em;
 }
+
+.rendered_html h2 {
+    font-family: Roboto, sans-serif;
+    font-weight: 300;
+    margin: 0;
+    padding: .1em;
+    font-style: italic;
+}
+
+.rendered_html h3 {
+    font-family: Roboto, sans-serif;
+    font-weight: 100;
+    margin: 0;
+    padding: .1em;
+}
+
+
+
+.rendered_html h3 {
+    font-family: Roboto, sans-serif;
+    font-weight: 100;
+    margin: 0;
+    padding: .1em;
+    
+    text-align: left;
+}
+
+/* .text_cell_render .border-box-sizing .rendered_html {
+    text-align: left;
+    display: block;
+} */
+
+
 
 /* div.cell.border-box-sizing.text_cell.rendered {
     font-size: 1em;
@@ -84,14 +124,10 @@ header b {
     vertical-align: bottom;
 }
 
-#top-web {
-    display: none;
-}
-
 nav ul {
     list-style: none;
     margin: 0 0 .5em 0;
-    padding: 0;
+    padding: .1em;
 
     font-size: 1.5em;
 
@@ -117,7 +153,7 @@ nav a:hover, nav a:active {
 }
 
 .current {
-    border-bottom: 2px solid black;
+    border-bottom: 2px dotted black;
 }
 
 footer {
@@ -161,32 +197,16 @@ footer a {
     text-align: right;
 }
 
-#footer-web {
-    display: none;
-}
-
 
 /* Adjust for web ---------------------------------------------------------- */
 
 @media only screen and (min-width: 800px) {
 
-    #top-mobile {
+    .mobile {
         display: none;
     }
    
-    #top-web {
-        display: inherit;
-    }
-
-    /* .current {
-        border-bottom: none;
-    } */
-
-    #footer-mobile {
-        display: none;
-    }
-
-    #footer-web {
+    .web {
         display: inherit;
     }
 
@@ -215,4 +235,19 @@ footer a {
     flex: 1 0 auto;
 
     z-index: 1;
+}
+
+.bottom-nav {
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.bottom-nav a{
+    color: #E2CA32;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+.bottom-nav span.black-text {
+    color: black;
 }
