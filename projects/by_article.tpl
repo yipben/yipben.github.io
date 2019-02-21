@@ -41,9 +41,9 @@
 
         <nav class="mobile nav">
             <ul>
-                <li><a href="index.html">A</a></li>
-                <li><a href="resume.html">R</a></li>
-                <li><a href="projects.html" class="current">P</a></li>
+                <li><a href="../index.html">A</a></li>
+                <li><a href="../resume.html">R</a></li>
+                <li><a href="../projects.html" class="current">P</a></li>
             </ul>
         </nav>
     </header>
